@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MichiganWeatherApp</string>
+    <string name="main_menu">Home</string>
+    <string name="default_temperature_text">Temperature: </string>
+    <string name="default_lux_text">Lux: </string>
+    <string name="weather_icon">Weather Icon</string>
+    <string name="check_weather">Check Weather</string>
+</resources>
