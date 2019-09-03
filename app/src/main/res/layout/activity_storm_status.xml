@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFCC"
-    tools:context=".PartlyCloudyStatus">
+    android:background="#94809c"
+    tools:context=".StormStatus">
 
     <ImageButton
         android:id="@+id/rainy_cloud"
@@ -13,16 +13,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
         android:layout_marginBottom="8dp"
-        android:background="#FFFFCC"
+        android:background="#94809c"
         android:contentDescription="@string/weather_icon"
-        android:onClick="changeVisibility"
+        android:onClick="toVibrate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/partly_cloudy" />
+        app:srcCompat="@drawable/storm" />
 
     <Button
         android:id="@+id/goToMainActivity"
@@ -40,32 +40,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
-
-    <TextView
-        android:id="@+id/lux"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/default_lux_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rainy_cloud"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/hiddenSun"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:contentDescription="@string/weather_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695"
-        app:srcCompat="@drawable/sun" />
 
 </android.support.constraint.ConstraintLayout>

@@ -18,8 +18,8 @@ public class SunnyStatus extends AppCompatActivity {
     }
 
     public void refreshTemperature(View view) {
-        int randomTemp = (int)(Math.random()*(150-60)) + 60;
-        ((TextView)findViewById(R.id.lux)).setText( "Temperature: " + randomTemp + "°F");
+        double randomTemp = (Math.random()*(150+50)) - 50;
+        ((TextView)findViewById(R.id.lux)).setText( "Temperature: " + String.format("%.2f", randomTemp) + " °F");
     }
 
     public void goToMenuActivity(View view) {

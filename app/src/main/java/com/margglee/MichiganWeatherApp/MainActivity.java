@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         int randomInt = new Random().nextInt(2);
         Class statusArray[] = new Class[] {SunnyStatus.class, PartlyCloudyStatus.class};
 
-        Intent intent = new Intent(this, statusArray[randomInt]);
-        //Intent intent = new Intent(this, SunnyStatus.class);
+        //Intent intent = new Intent(this, statusArray[randomInt]);
+        Intent intent = new Intent(this, StormStatus.class);
         startActivity(intent);
         view.setBackgroundResource(0);
         this.finish();

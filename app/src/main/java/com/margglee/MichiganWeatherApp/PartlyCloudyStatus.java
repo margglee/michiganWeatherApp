@@ -10,11 +10,13 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 //Shows the brightness from the brightness sensor
 public class PartlyCloudyStatus extends AppCompatActivity {
     TextView textLight;
+    ImageView sunIcon;
     private SensorManager sensorManager;
     private Sensor sensor;
 
@@ -27,6 +29,7 @@ public class PartlyCloudyStatus extends AppCompatActivity {
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         textLight = findViewById(R.id.lux);
+        sunIcon = findViewById(R.id.hiddenSun);
     }
 
     public SensorEventListener lightListener = new SensorEventListener() {
@@ -36,6 +39,16 @@ public class PartlyCloudyStatus extends AppCompatActivity {
             textLight.setText((int)x + " Lux");
         }
     };
+
+    public void changeVisibility(View view){
+        if (sunIcon.getVisibility() == View.VISIBLE) {
+            sunIcon.setVisibility(View.INVISIBLE);
+        }
+        else{
+            sunIcon.setVisibility(View.VISIBLE);
+        }
+
+    }
 
     @Override
     public void onResume() {
