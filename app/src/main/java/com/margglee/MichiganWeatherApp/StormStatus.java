@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 
 public class StormStatus extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +22,21 @@ public class StormStatus extends AppCompatActivity {
         long[] pattern = {0, 300, 500, 400, 200, 600};
         //Only vibrate the pattern once
         v.vibrate(pattern, -1);
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
     }
 
     public void goToMenuActivity(View view) {

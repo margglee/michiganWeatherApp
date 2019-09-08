@@ -1,6 +1,5 @@
 package com.margglee.MichiganWeatherApp;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.Sensor;
@@ -48,6 +47,12 @@ public class PartlyCloudyStatus extends AppCompatActivity {
             sunIcon.setVisibility(View.VISIBLE);
         }
 
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        sensorManager.unregisterListener(lightListener);
     }
 
     @Override

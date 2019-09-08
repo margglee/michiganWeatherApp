@@ -2,39 +2,27 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FAE200"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/sunnyView"
-    tools:context=".SunnyStatus">
+    android:background="#CCDBD4"
+    tools:context=".RainyStatus">
 
     <ImageButton
         android:id="@+id/snow_cloud"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
-        android:contentDescription="@string/weather_icon"
-        android:onClick="refreshTemperature"
-        android:background="#FAE200"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sun" />
-
-    <TextView
-        android:id="@+id/lux"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/default_temperature_text"
+        android:background="#CCDBD4"
+        android:contentDescription="@string/weather_icon"
+        android:onClick="changeVisibility"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/snow_cloud"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rainy_cloud" />
 
     <Button
         android:id="@+id/goToMainActivity"
@@ -52,4 +40,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
+
+    <ImageView
+        android:id="@+id/snowflake"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/weather_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snow_cloud"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/raindrops" />
 </android.support.constraint.ConstraintLayout>

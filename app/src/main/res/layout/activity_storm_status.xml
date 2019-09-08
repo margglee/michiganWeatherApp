@@ -8,7 +8,7 @@
     tools:context=".StormStatus">
 
     <ImageButton
-        android:id="@+id/rainy_cloud"
+        android:id="@+id/snow_cloud"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"

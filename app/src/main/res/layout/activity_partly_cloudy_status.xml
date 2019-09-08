@@ -8,7 +8,7 @@
     tools:context=".PartlyCloudyStatus">
 
     <ImageButton
-        android:id="@+id/rainy_cloud"
+        android:id="@+id/snow_cloud"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rainy_cloud"
+        app:layout_constraintTop_toBottomOf="@+id/snow_cloud"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
