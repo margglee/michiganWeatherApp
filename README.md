@@ -1,5 +1,5 @@
 # michiganWeatherApp
-App that shows random weather statuses
+App that shows one of the five random weather predictions
 
 
 Since Michigan natives joke about the unpredictable weather, I made this weather app that provides inaccurate and unpredictable weather information using sensors. This is a fun personal project to learn about app development, Java and Android Studio.
