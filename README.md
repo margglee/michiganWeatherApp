@@ -1,8 +1,8 @@
 # michiganWeatherApp
-App that shows one of the five random weather predictions
+A fun app that shows one of the five random weather predictions
 
 
-Since Michigan natives joke about the unpredictable weather, I made this weather app that provides inaccurate and unpredictable weather information using sensors. This is a fun personal project to learn about app development, Java and Android Studio.
+Since Michigan natives joke about the unpredictable weather, I made this weather app that provides inaccurate and unpredictable weather information that uses the capabilities of the phone. This is a fun personal project to learn about app development, Java and Android Studio.
 
 
 Weather Statuses
@@ -11,7 +11,7 @@ Cloudy: Uses the light sensor to give a brightness value every second and change
 
 Rainy: Changes the size of the rain icon
 
-Snowy: Moves the snow icon and can be reset when button is activated
+Snowy: Moves the snow icon using the gyroscope and can be reset when button is activated
 
 Stormy: Vibrates three times at different intervals when button is activated
 
