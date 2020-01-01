@@ -2,7 +2,7 @@
 A fun app that shows one of the five random weather predictions
 
 
-Since Michigan natives joke about the unpredictable weather, I made this weather app that provides inaccurate and unpredictable weather information that uses the capabilities of the phone. This is a fun personal project to learn about app development, Java and Android Studio.
+Since Michigan natives joke about the unpredictable weather, I made this weather app that provides inaccurate and unpredictable weather information using the capabilities of the phone. This is a fun personal project to learn about app development, Java and Android Studio.
 
 
 Weather Statuses
